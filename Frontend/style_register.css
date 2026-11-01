@@ -1,0 +1,250 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #167447;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 22px;
+}
+
+.navbar .nav-links a {
+    color: #233f30;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar .nav-links a:hover {
+    color: #167447;
+}
+
+.navbar .nav-links .nav-button {
+    padding: 10px 18px;
+    background-color: #167447;
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+.navbar .nav-links .nav-button:hover {
+    background-color: #105a35;
+    color: #ffffff;
+}
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    background-color: #d8e6de;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #dce8df;
+    border-radius: 14px;
+}
+
+.register-card h1 {
+    color: #167447;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.register-intro {
+    text-align: center;
+    color: #59675f;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #24332b;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #ccd9cf;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-group input:focus {
+    outline: 2px solid #b0e0c8;
+    border-color: #167447;
+}
+
+.success-message {
+    display: none;
+    background-color: #d1fae5;
+    color: #166534;
+    border: 1px solid #86efac;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.success-message.show {
+    display: block;
+}
+
+.register-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #167447;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-submit:hover {
+    background-color: #105a35;
+}
+
+.register-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+#form-message {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#form-message:empty {
+    display: none;
+}
+
+#form-message.error {
+    color: #b42318;
+}
+
+#form-message.success {
+    color: #167447;
+}
+
+.footer {
+    background-color: #173c2b;
+    color: #ffffff;
+    padding: 35px 7% 18px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #496756;
+    text-align: center;
+    color: #d2e4d8;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 14px 10px;
+        gap: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 12px;
+    }
+
+    .navbar .nav-links .nav-button {
+        padding: 8px;
+    }
+    .register-card {
+        padding: 25px 20px;
+    }
+
+    .register-card h1 {
+        font-size: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-content a {
+        overflow-wrap: anywhere;
+    }
+}

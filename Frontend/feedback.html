@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback | CleanKarachi</title>
+    <link rel="stylesheet" href="style_feedback.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-button">Register</a>
+        </nav>
+    </header>
+
+    <main class="feedback-page">
+
+        <a href="citizen-dashboard.html" class="feedback-back-link">
+            <- Back to Dashboard
+        </a>
+
+        <section class="feedback-heading">
+            <h1>Share Your Feedback</h1>
+            <p>
+                Your feedback helps us improve waste collection
+                and keep Karachi cleaner.
+            </p>
+        </section>
+
+        <section class="feedback-card">
+
+            <h2>Tell Us About Your Experience</h2>
+            <p class="feedback-description">
+                Please share your experience with the complaint resolution process.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="feedback-form-group">
+                    <label for="complaint-id">Complaint Reference</label>
+
+                    <input type="text" id="complaint-id" name="complaint_id" placeholder="Enter your complaint ID"
+                        required>
+                </div>
+
+                <div class="feedback-form-group">
+                    <label for="rating">Overall Rating</label>
+
+                    <select id="rating" name="rating" required>
+                        <option value="">Select your rating</option>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="3">3 - Good</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="1">1 - Poor</option>
+                    </select>
+                </div>
+
+                <div class="feedback-form-group">
+                    <label for="comments">Your Comments</label>
+
+                    <textarea id="comments" name="comments" rows="6"
+                        placeholder="Tell us what went well or what we can improve..." required></textarea>
+                </div>
+
+                <div class="feedback-form-actions">
+                    <a href="citizen-dashboard.html" class="feedback-cancel">
+                        Cancel
+                    </a>
+
+                    <button type="submit" class="feedback-submit">
+                        Submit Feedback
+                    </button>
+                </div>
+
+            </form>
+
+            <p class="feedback-notice">
+                Demo form: feedback is not saved until backend integration.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

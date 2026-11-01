@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints | CleanKarachi</title>
+    <link rel="stylesheet" href="style_complaints.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-button">Register</a>
+        </nav>
+    </header>
+
+    <main class="complaints-page">
+
+        <section class="complaints-header">
+            <h1>Community Complaints</h1>
+            <p>
+                Explore reported waste issues and help make Karachi cleaner.
+            </p>
+
+            <a href="complaint-form.html" class="complaint-button">
+                Submit a Complaint
+            </a>
+        </section>
+
+        <section class="complaints-content">
+
+            <div class="complaints-toolbar">
+                <h2>Recent Complaints</h2>
+
+                <select aria-label="Filter complaints by status">
+                    <option value="all">All Complaints</option>
+                    <option value="pending">Pending</option>
+                    <option value="assigned">Assigned</option>
+                    <option value="in_progress">In Progress</option>
+                    <option value="resolved">Resolved</option>
+                </select>
+            </div>
+
+            <div class="complaints-grid">
+
+                <article class="complaint-card">
+                    <div class="complaint-card-top">
+                        <span class="complaint-category">Garbage Collection</span>
+                        <span class="status pending">Pending</span>
+                    </div>
+
+                    <h3>Garbage Pile on the Road</h3>
+
+                    <p class="complaint-description">
+                        A large amount of garbage has accumulated beside
+                        the road and needs to be collected.
+                    </p>
+
+                    <p class="complaint-location">
+                        <strong>Location:</strong> Gulshan-e-Iqbal, Karachi
+                    </p>
+
+                    <div class="complaint-card-bottom">
+                        <span>Complaint #001</span>
+                        <a href="complaint-details.html">View Details</a>
+                    </div>
+                </article>
+
+                <article class="complaint-card">
+                    <div class="complaint-card-top">
+                        <span class="complaint-category">Overflowing Bin</span>
+                        <span class="status progress">In Progress</span>
+                    </div>
+
+                    <h3>Overflowing Public Dustbin</h3>
+
+                    <p class="complaint-description">
+                        A public dustbin is overflowing, causing litter
+                        to spread across the surrounding area.
+                    </p>
+
+                    <p class="complaint-location">
+                        <strong>Location:</strong> North Nazimabad, Karachi
+                    </p>
+
+                    <div class="complaint-card-bottom">
+                        <span>Complaint #002</span>
+                        <a href="complaint-details.html">View Details</a>
+                    </div>
+                </article>
+
+                <article class="complaint-card">
+                    <div class="complaint-card-top">
+                        <span class="complaint-category">Street Cleaning</span>
+                        <span class="status resolved">Resolved</span>
+                    </div>
+
+                    <h3>Unclean Street Corner</h3>
+
+                    <p class="complaint-description">
+                        Waste had collected at a street corner. The
+                        cleaning team has marked this issue as resolved.
+                    </p>
+
+                    <p class="complaint-location">
+                        <strong>Location:</strong> PECHS, Karachi
+                    </p>
+
+                    <div class="complaint-card-bottom">
+                        <span>Complaint #003</span>
+                        <a href="complaint-details.html">View Details</a>
+                    </div>
+                </article>
+
+                
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

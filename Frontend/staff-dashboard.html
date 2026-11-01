@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard | CleanKarachi</title>
+    <link rel="stylesheet" href="style_staff-dashboard.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="staff-dashboard.html" class="active-link">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="staff-dashboard">
+
+        <section class="dashboard-heading">
+            <div>
+                <h1>Staff Dashboard</h1>
+                <p>Manage your assigned garbage complaints.</p>
+            </div>
+
+            <span class="staff-role">Staff Panel</span>
+        </section>
+
+        <section class="staff-stats">
+
+            <div class="staff-stat-card">
+                <h3>Assigned Complaints</h3>
+                <p class="stat-number">0</p>
+            </div>
+
+            <div class="staff-stat-card">
+                <h3>Pending</h3>
+                <p class="stat-number">0</p>
+            </div>
+
+            <div class="staff-stat-card">
+                <h3>In Progress</h3>
+                <p class="stat-number">0</p>
+            </div>
+
+            <div class="staff-stat-card">
+                <h3>Resolved</h3>
+                <p class="stat-number">0</p>
+            </div>
+
+        </section>
+
+        <section class="assigned-complaints">
+
+            <div class="section-heading">
+                <div>
+                    <h2>My Assigned Complaints</h2>
+                    <p>Complaints assigned to you for resolution.</p>
+                </div>
+
+                <select class="staff-filter" aria-label="Filter complaints by status">
+                    <option value="all">All Statuses</option>
+                    <option value="assigned">Assigned</option>
+                    <option value="in_progress">In Progress</option>
+                    <option value="resolved">Resolved</option>
+                </select>
+            </div>
+
+            <div class="staff-empty-state">
+                <h3>No Assigned Complaints</h3>
+                <p>
+                    You currently have no complaints assigned to you.
+                    New assignments will appear here.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

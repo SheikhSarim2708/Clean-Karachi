@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | CleanKarachi</title>
+    <link rel="stylesheet" href="style_admin-dashboard.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="admin-dashboard.html" class="active-link">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="admin-dashboard">
+
+        <section class="admin-heading">
+            <div>
+                <h1>Admin Dashboard</h1>
+                <p>Monitor complaints and manage city cleanup operations.</p>
+            </div>
+
+            <span class="admin-badge">Administrator</span>
+        </section>
+
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+                <p>Total Complaints</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="admin-stat-card">
+                <p>Pending Complaints</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="admin-stat-card">
+                <p>In Progress</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="admin-stat-card">
+                <p>Resolved Complaints</p>
+                <h2>0</h2>
+            </div>
+
+        </section>
+
+        <section class="admin-management">
+
+            <h2>Management</h2>
+            <p class="admin-section-description">
+                Access the main areas of the CleanKarachi system.
+            </p>
+
+            <div class="management-grid">
+
+                <article class="management-card">
+                    <div class="management-icon">01</div>
+                    <h3>Complaint Management</h3>
+                    <p>
+                        View submitted complaints and monitor their current status.
+                    </p>
+                    <a href="complaints.html" class="management-link">
+                        View Complaints &rarr;
+                    </a>
+
+                    <a href="admin-complaints.html" class="management-link">
+                        Manage Complaints &rarr;
+                    </a>
+
+                </article>
+
+                <article class="management-card">
+                    <div class="management-icon">02</div>
+                    <h3>Staff Management</h3>
+                    <p>
+                        Review the staff-management area for assigning cleanup work.
+                    </p>
+                    <a href="staff-management.html" class="management-link">
+                        Manage Staff &rarr;
+                    </a>               
+                </article>
+
+                <article class="management-card">
+                    <div class="management-icon">03</div>
+                    <h3>Area Management</h3>
+                    <p>
+                        Manage the service areas covered by the complaint system.
+                    </p>
+                    <a href="area-management.html" class="management-link">
+                        Manage Areas &rarr;
+                    </a>
+                </article>
+
+                <article class="management-card">
+                    <div class="management-icon">04</div>
+                    <h3>Category Management</h3>
+                    <p>
+                        Organize the categories citizens can select when reporting waste.
+                    </p>
+                    <a href="category-management.html" class="management-link">
+                        Manage Categories &rarr;
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="admin-recent">
+
+            <div class="admin-section-heading">
+                <div>
+                    <h2>Recent Complaints</h2>
+                    <p>Latest complaints submitted to the system.</p>
+                </div>
+
+                <a href="complaints.html" class="view-all-link">
+                    View All
+                </a>
+            </div>
+
+            <div class="admin-empty-state">
+                <h3>No Complaints Available</h3>
+                <p>
+                    Complaints will appear here when records are available
+                    in the database.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

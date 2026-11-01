@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management | CleanKarachi</title>
+    <link rel="stylesheet" href="style_admin-complaints.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="admin-complaints-page">
+
+        <a href="admin-dashboard.html" class="admin-complaints-back">
+            <- Back to Admin Dashboard
+        </a>
+
+        <section class="admin-complaints-heading">
+            <div>
+                <h1>Complaint Management</h1>
+                <p>View and manage all citizen complaints.</p>
+            </div>
+        </section>
+
+        <section class="complaint-overview">
+
+            <div class="complaint-overview-card">
+                <p>Total Complaints</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="complaint-overview-card">
+                <p>Pending</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="complaint-overview-card">
+                <p>Assigned</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="complaint-overview-card">
+                <p>Resolved</p>
+                <h2>0</h2>
+            </div>
+
+        </section>
+
+        <section class="admin-complaint-list">
+
+            <div class="admin-complaint-list-heading">
+                <div>
+                    <h2>All Complaints</h2>
+                    <p>Monitor complaints submitted by citizens.</p>
+                </div>
+
+                <input type="search" class="admin-complaint-search" placeholder="Search complaints..."
+                    aria-label="Search complaints">
+            </div>
+
+            <div class="admin-complaint-filters">
+
+                <div class="admin-filter-group">
+                    <label for="status-filter">Status</label>
+
+                    <select id="status-filter">
+                        <option value="all">All Statuses</option>
+                        <option value="pending">Pending</option>
+                        <option value="assigned">Assigned</option>
+                        <option value="in_progress">In Progress</option>
+                        <option value="resolved">Resolved</option>
+                    </select>
+                </div>
+
+                <div class="admin-filter-group">
+                    <label for="category-filter">Category</label>
+
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="overflow">Garbage Overflow</option>
+                        <option value="illegal">Illegal Dumping</option>
+                        <option value="collection">Missed Collection</option>
+                    </select>
+                </div>
+
+                <div class="admin-filter-group">
+                    <label for="area-filter">Area</label>
+
+                    <select id="area-filter">
+                        <option value="all">All Areas</option>
+                        <option value="clifton">Clifton</option>
+                        <option value="kemari">Kemari</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="admin-complaint-empty">
+                <h3>No Complaints Found</h3>
+                <p>
+                    Submitted complaints will appear here
+                    when records are available in the database.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

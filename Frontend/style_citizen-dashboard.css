@@ -1,0 +1,338 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #167447;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 22px;
+}
+
+.navbar .nav-links a {
+    color: #233f30;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar .nav-links a:hover {
+    color: #167447;
+}
+
+.navbar .nav-links .nav-button {
+    padding: 10px 18px;
+    background-color: #167447;
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+.navbar .nav-links .nav-button:hover {
+    background-color: #105a35;
+    color: #ffffff;
+}
+
+.citizen-dashboard {
+    flex: 1;
+    background-color: #f5f8f5;
+    padding: 35px 5%;
+}
+
+.dashboard-welcome {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-label {
+    color: #167447;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.dashboard-welcome h1 {
+    color: #24332b;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.dashboard-welcome p:not(.dashboard-label) {
+    color: #59675f;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.dashboard-primary-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #167447;
+    color: #ffffff;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dashboard-primary-btn:hover {
+    background-color: #105a35;
+}
+
+.dashboard-feedback-link {
+    padding: 12px 18px;
+    background-color: #167447;
+    color: #ffffff;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dashboard-feedback-link:hover {
+    background-color: #105a35;
+}
+
+.dashboard-stats {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.dashboard-stat-card {
+    min-width: 0;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #dce8df;
+    border-radius: 12px;
+}
+
+.dashboard-stat-card p {
+    color: #59675f;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.dashboard-stat-card h2 {
+    color: #167447;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.dashboard-stat-card span {
+    color: #78847c;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.my-complaints-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.my-complaints-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.my-complaints-heading h2 {
+    color: #24332b;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.my-complaints-heading p {
+    color: #59675f;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.dashboard-secondary-link {
+    color: #167447;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dashboard-secondary-link:hover {
+    text-decoration: underline;
+}
+
+.dashboard-empty-state {
+    padding: 45px 20px;
+    background-color: #ffffff;
+    border: 1px solid #dce8df;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.empty-state-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background-color: #e5f3e9;
+    color: #167447;
+    font-size: 30px;
+}
+
+.dashboard-empty-state h3 {
+    color: #24332b;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.dashboard-empty-state p {
+    max-width: 420px;
+    margin: 0 auto 22px;
+    color: #59675f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer {
+    background-color: #173c2b;
+    color: #ffffff;
+    padding: 35px 7% 18px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #496756;
+    text-align: center;
+    color: #d2e4d8;
+    font-size: 13px;
+}
+
+@media (max-width: 950px) {
+    .dashboard-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 14px 10px;
+        gap: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 12px;
+    }
+
+    .navbar .nav-links .nav-button {
+        padding: 8px;
+    }
+    
+    .citizen-dashboard {
+        padding: 25px 15px;
+    }
+
+    .dashboard-welcome {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .dashboard-welcome h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .dashboard-stat-card {
+        padding: 18px;
+    }
+
+    .my-complaints-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .dashboard-empty-state {
+        padding: 35px 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .footer-content a {
+        overflow-wrap: anywhere;
+    }
+}

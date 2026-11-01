@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management | CleanKarachi</title>
+    <link rel="stylesheet" href="style_staff-complaint-details.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="staff-dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="staff-detail-page">
+
+        <a href="staff-dashboard.html" class="back-link">
+            <- Back to Dashboard
+        </a>
+
+        <section class="detail-heading">
+            <div>
+                <h1>Complaint Details</h1>
+                <p>Review the complaint and update its progress.</p>
+            </div>
+
+            <span class="detail-status status-assigned">Assigned</span>
+        </section>
+
+        <section class="detail-card">
+
+            <div class="detail-card-heading">
+                <div>
+                    <p class="detail-label">Complaint Reference</p>
+                    <h2>#1001</h2>
+                </div>
+
+                <span class="detail-date">Sample Record</span>
+            </div>
+
+            <div class="detail-information">
+                <div class="detail-field">
+                    <span>Complaint Title</span>
+                    <p>Garbage Overflow Near Residential Street</p>
+                </div>
+
+                <div class="detail-field">
+                    <span>Category</span>
+                    <p>Garbage Overflow</p>
+                </div>
+
+                <div class="detail-field">
+                    <span>Area</span>
+                    <p>Clifton</p>
+                </div>
+
+                <div class="detail-field">
+                    <span>Address Details</span>
+                    <p>Near the main residential road</p>
+                </div>
+
+                <div class="detail-field full-width">
+                    <span>Description</span>
+                    <p>
+                        Garbage has accumulated near the street.
+                        The waste needs to be collected and the area
+                        should be cleaned.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="status-update-card">
+
+            <h2>Update Complaint Status</h2>
+            <p class="form-description">
+                Select the current status and add a resolution note.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="staff-form-group">
+                    <label for="complaint-status">Complaint Status</label>
+
+                    <select id="complaint-status" name="status" required>
+                        <option value="assigned">Assigned</option>
+                        <option value="in_progress">In Progress</option>
+                        <option value="resolved">Resolved</option>
+                    </select>
+                </div>
+
+                <div class="staff-form-group">
+                    <label for="resolution-note">Work / Resolution Notes</label>
+
+                    <textarea id="resolution-note" name="resolution_note" rows="5"
+                        placeholder="Describe the action taken or work remaining..."></textarea>
+                </div>
+
+                <div class="staff-form-actions">
+                    <a href="staff-dashboard.html" class="cancel-button">
+                        Cancel
+                    </a>
+
+                    <button type="submit" class="update-status-button">
+                        Update Status
+                    </button>
+                </div>
+
+            </form>
+
+            <p class="design-notice">
+                Demo interface: changes are not saved until backend integration.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

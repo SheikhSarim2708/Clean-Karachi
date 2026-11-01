@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Management | CleanKarachi</title>
+    <link rel="stylesheet" href="style_category-management.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="management-page">
+
+        <a href="admin-dashboard.html" class="management-back-link">
+            <- Back to Admin Dashboard
+        </a>
+
+        <section class="management-page-heading">
+            <div>
+                <h1>Category Management</h1>
+                <p>Manage the categories citizens use to report waste issues.</p>
+            </div>
+
+            <button type="button" class="management-add-button">
+                + Add New Category
+            </button>
+        </section>
+
+        <section class="management-overview">
+
+            <div class="overview-card">
+                <p>Total Categories</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="overview-card">
+                <p>Active Categories</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="overview-card">
+                <p>Inactive Categories</p>
+                <h2>0</h2>
+            </div>
+
+        </section>
+
+        <section class="management-list-section">
+
+            <div class="management-list-heading">
+                <div>
+                    <h2>Complaint Categories</h2>
+                    <p>View and manage available complaint types.</p>
+                </div>
+
+                <input type="search" placeholder="Search categories..." aria-label="Search categories"
+                    class="management-search">
+            </div>
+
+            <div class="management-empty-state">
+                <h3>No Categories Available</h3>
+                <p>
+                    Complaint categories will appear here when they
+                    are available in the database.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="management-form-section">
+
+            <h2>Add New Category</h2>
+            <p class="management-form-description">
+                Enter the details of a new complaint category.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="management-form-group">
+                    <label for="category-name">Category Name</label>
+
+                    <input type="text" id="category-name" name="category_name" placeholder="e.g. Garbage Overflow"
+                        required>
+                </div>
+
+                <div class="management-form-group">
+                    <label for="category-description">Description</label>
+
+                    <textarea id="category-description" name="description" rows="4"
+                        placeholder="Describe this complaint category..."></textarea>
+                </div>
+
+                <button type="submit" class="management-save-button">
+                    Save Category
+                </button>
+
+            </form>
+
+            <p class="management-demo-note">
+                Demo form: category information is not saved yet.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Complaint | CleanKarachi</title>
+    <link rel="stylesheet" href="style_complaint_form.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-button">Register</a>
+        </nav>
+    </header>
+
+    <main class="complaint-form-page">
+
+        <section class="complaint-form-card">
+
+            <div class="complaint-form-heading">
+                <h1>Submit a Complaint</h1>
+                <p>
+                    Report a waste management issue and help us make
+                    Karachi cleaner and healthier.
+                </p>
+            </div>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="complaint-title">Complaint Title</label>
+                    <input type="text" id="complaint-title" name="title" placeholder="e.g. Garbage on roadside"
+                        maxlength="150" required>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="category">Complaint Category</label>
+                        <select id="category" name="category_id" required>
+                            <option value="">Select a category</option>
+                            <option value="1">Garbage Collection</option>
+                            <option value="2">Overflowing Dustbin</option>
+                            <option value="3">Illegal Dumping</option>
+                            <option value="4">Other Waste Issue</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="area">Area</label>
+                        <select id="area" name="area_id" required>
+                             <option value="">Select your area</option>
+                            <option value="1">Airport</option>
+                            <option value="2">Bahadurabad</option>
+                            <option value="3">Bahria Town Karachi</option>
+                            <option value="4">Baldia Town</option>
+                            <option value="5">Buffer Zone</option>
+                            <option value="6">Clifton</option>
+                            <option value="7">DHA (Defence)</option>
+                            <option value="8">Federal B Area</option>
+                            <option value="9">Garden</option>
+                            <option value="10">Gulberg</option>
+                            <option value="11">Gulistan-e-Johar</option>
+                            <option value="12">Gulshan-e-Hadeed</option>
+                            <option value="13">Gulshan-e-Iqbal</option>
+                            <option value="14">Gulshan-e-Maymar</option>
+                            <option value="15">Gulzar-e-Hijri</option>
+                            <option value="16">Ibrahim Hyderi</option>
+                            <option value="17">Jamshed Road</option>
+                            <option value="18">Kemari</option>
+                            <option value="19">Kharadar</option>
+                            <option value="20">Korangi</option>
+                            <option value="21">Landhi</option>
+                            <option value="22">Liaquatabad</option>
+                            <option value="23">Lyari</option>
+                            <option value="24">Malir</option>
+                            <option value="25">Malir Cantt</option>
+                            <option value="26">Model Colony</option>
+                            <option value="27">Naya Nazimabad</option>
+                            <option value="28">Nazimabad</option>
+                            <option value="29">New Karachi</option>
+                            <option value="30">North Karachi</option>
+                            <option value="31">North Nazimabad</option>
+                            <option value="32">Orangi Town</option>
+                            <option value="33">PECHS</option>
+                            <option value="34">Qayyumabad</option>
+                            <option value="35">Quaidabad</option>
+                            <option value="36">Saddar</option>
+                            <option value="37">Safoora</option>
+                            <option value="38">Scheme 33</option>
+                            <option value="39">Shah Faisal Colony</option>
+                            <option value="40">Shah Latif Town</option>
+                            <option value="41">Shershah</option>
+                            <option value="42">SITE Area</option>
+                            <option value="43">Steel Town</option>
+                            <option value="44">Surjani Town</option>
+                            <option value="45">Tariq Road</option>
+                            <option value="46">University Road</option>
+                        
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address Details</label>
+                    <input type="text" id="address" name="address_detail"
+                        placeholder="Enter street, road or nearby landmark" maxlength="255">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Complaint Description</label>
+                    <textarea id="description" name="description" rows="5"
+                        placeholder="Describe the waste problem and its location..." required></textarea>
+                </div>
+
+                <!-- Complaint Image Upload -->
+                <div class="form-group">
+                    <label for="complaint-image">Upload Garbage Image (Optional)</label>
+                
+                    <input type="file" id="complaint-image" name="complaint_image" accept="image/jpeg, image/png, image/webp">
+                
+                    <small class="upload-help">
+                        Upload a JPG, PNG, or WebP image. Maximum size: 5 MB.
+                    </small>
+                </div>
+
+
+                <button type="submit" class="complaint-submit">
+                    Submit Complaint
+                </button>
+
+                <p class="form-note">
+                    Please provide accurate information so the relevant
+                    team can identify the issue.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+        <script src="complaints.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Management | CleanKarachi</title>
+    <link rel="stylesheet" href="style_area-management.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">CleanKarachi</a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="complaints.html">Complaints</a>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="management-page">
+
+        <a href="admin-dashboard.html" class="management-back-link">
+            <- Back to Admin Dashboard
+        </a>
+
+        <section class="management-page-heading">
+            <div>
+                <h1>Area Management</h1>
+                <p>Manage the service areas covered by CleanKarachi.</p>
+            </div>
+
+            <button type="button" class="management-add-button">
+                + Add New Area
+            </button>
+        </section>
+
+        <section class="management-overview">
+
+            <div class="overview-card">
+                <p>Total Areas</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="overview-card">
+                <p>Active Areas</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="overview-card">
+                <p>Inactive Areas</p>
+                <h2>0</h2>
+            </div>
+
+        </section>
+
+        <section class="management-list-section">
+
+            <div class="management-list-heading">
+                <div>
+                    <h2>Service Areas</h2>
+                    <p>View and manage registered areas.</p>
+                </div>
+
+                <input type="search" placeholder="Search areas..." aria-label="Search areas" class="management-search">
+            </div>
+
+            <div class="management-empty-state">
+                <h3>No Areas Available</h3>
+                <p>
+                    Service areas will appear here when they are
+                    available in the database.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="management-form-section">
+
+            <h2>Add New Service Area</h2>
+            <p class="management-form-description">
+                Enter the details of a new service area.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="management-form-group">
+                    <label for="area-name">Area Name</label>
+
+                    <input type="text" id="area-name" name="area_name" placeholder="Enter area name" required>
+                </div>
+
+                <div class="management-form-group">
+                    <label for="area-description">Description</label>
+
+                    <textarea id="area-description" name="description" rows="4"
+                        placeholder="Enter area details..."></textarea>
+                </div>
+
+                <button type="submit" class="management-save-button">
+                    Save Area
+                </button>
+
+            </form>
+
+            <p class="management-demo-note">
+                Demo form: area information is not saved yet.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    
+        <div class="footer-content">
+    
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    CleanKarachi
+                </a>
+    
+                <p>Waste Pickup & Garbage Complaint System</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="complaints.html">Complaints</a>
+                <a href="login.html">Login</a>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 CleanKarachi. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>
