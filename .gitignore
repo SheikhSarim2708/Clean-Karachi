@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.env
+Backend/config.py
+Backend/uploads/*
+!Backend/uploads/.gitkeep
+*cookies.txt
+*.csv
+test.jpg
+big.jpgBackend/downloaded.jpg
+Backend/downloaded.jpg
